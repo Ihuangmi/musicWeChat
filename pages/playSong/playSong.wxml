@@ -1,0 +1,29 @@
+<!--pages/playSong/playSong.wxml-->
+<view class="body">
+
+  <view class="name">{{name}}</view>
+  <image class="pic" src="{{picUrl}}"></image>
+
+ <!-- 歌词 -->
+   <view class="lyric">
+    <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-into-view="{{lyricLatest2}}">
+      <view id="scroll{{index}}" class="lyric_item {{('scroll'+index)==lyricLatest?'active':''}}" wx:for="{{lyric}}" wx:key="{{index}}">{{item}}</view>
+    </scroll-view>
+  </view>
+
+
+  <!-- 进度条 -->
+  <view class="slider">
+
+    <view style="margin-left:30rpx">{{currentTime}}</view>
+    <slider bindchange="slider_change" bindchanging="slider_changing" value="{{sliderValue}}" block-size="18" max="{{allTime}}"></slider>
+    <view>{{finalTime}}</view>
+    <view class="button">
+    <image bindtap="beginORpause" src="{{imgSRC}}"></image>
+    
+    </view>
+    <!-- <view class="button" bindtap="song_pause">暂停</view> -->
+
+  </view>
+
+</view>

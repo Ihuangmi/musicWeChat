@@ -1,0 +1,32 @@
+<!--pages/listDetail/listDetail.wxml-->
+
+<view>
+  <image class="coverImg" src="{{listInfo.coverImgUrl}}"></image>
+</view>
+
+<!-- <view class="allList">
+  <view bindtap="goToMusic" data-id="{{item.id}}" class="item" id="{{index}}" wx:for="{{listItem}}" wx:key="{{index}}">
+    <view class="title">{{index+1}} {{item.name}} </view>
+  </view>
+</view> -->
+
+<view>
+  <view wx:for="{{ listItem }}" wx:key="{{index}}" class="item" bindtap="goToMusic" data-id="{{item.id}}">
+
+    <view class="left">
+      <view data-id="{{ item.id }}">{{ item.name}}</view>
+      <view class="info">
+        <view class="sq">
+          <image src="/resource/sq.png"></image>
+        </view>
+        <view class="songer">{{songer[index]}}</view>
+      </view>
+
+    </view>
+
+    <view class="right">
+      <image src="/resource/playGray.png"></image>
+    </view>
+
+  </view>
+</view>

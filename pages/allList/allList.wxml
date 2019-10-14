@@ -1,0 +1,10 @@
+<!--pages/allList/allLIst.wxml-->
+
+<!-- <view class="head"> 网易云音乐榜单 </view> -->
+
+<view class="allList">
+  <view class="item" bindtap="goToList" data-id="{{index}}" wx:for="{{topList}}" wx:key="{{index}}">
+    <image src="{{imgURL[index]}}"></image>
+    <text>{{index+1}}</text> {{item.name}}
+  </view>
+</view>

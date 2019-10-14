@@ -1,0 +1,42 @@
+<!--pages/songer/songer.wxml-->
+
+<view class="info">
+  <image class="bgPic" src="{{info.picUrl}}">
+    <cover-view class="name">
+      {{info.name}}
+      <!-- <cover-view class="button">
+        个人主页
+      </cover-view> -->
+    </cover-view>
+  </image>
+
+</view>
+
+<!-- <view class="allList">
+  <view class="item" bindtap="goToPlay" data-id="{{item.id}}" wx:for="{{songList}}" wx:key="{{index}}">
+    <image src="{{item.al.picUrl}}"></image>
+    <text></text> {{item.name}}--
+    <view>{{item.al.name}}</view>
+  </view>
+</view> -->
+
+
+<view class="page">
+  <view wx:for="{{songList}}" wx:key="{{index}}" class="item" bindtap="goToPlay" data-id="{{item.id}}">
+    <view class="left">
+      <view data-id="{{ item.id }}">{{ item.name}}</view>
+      <view class="inform">
+        <view class="sq">
+          <image src="/resource/sq.png"></image>
+        </view>
+        <view class="songer">{{item.al.name}}</view>
+      </view>
+
+    </view>
+
+    <view class="right">
+      <image src="/resource/playGray.png"></image>
+    </view>
+
+  </view>
+</view>

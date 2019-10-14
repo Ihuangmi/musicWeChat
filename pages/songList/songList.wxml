@@ -1,0 +1,19 @@
+<view class="nav">
+  <view class="nav1">
+    <image src="{{value}}" class="img"></image>
+    <view class="text">{{text}} | {{copywriter}}</view>
+    <view class="copywriter"></view>
+  </view>
+</view>
+<!-- <view class="tag">tag</view> -->
+<view class="list">歌曲列表</view>
+
+
+<view  wx:for="{{songList}}" class="song" bindtap="toPlay" data-id="{{item.id}}">
+  <view class="num">{{index+1}}</view>
+  <view class="content">
+    <view class="songs">{{arr[index]}}</view>
+    <view class="singer">{{item.ar[0].name}}-{{arr2[index]}}</view>
+  </view>
+  <view class="icon"><image class="icon2" src="../../icon/play.png"></image></view>
+</view>

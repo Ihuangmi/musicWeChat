@@ -1,0 +1,29 @@
+/* pages/allList/allList.wxss */
+
+
+.allList>view {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  margin-bottom: 30rpx;
+  font-size: 40rpx;
+}
+.allList>view:nth-child(2n){
+  background: linear-gradient(to right,rgba(145,244,218,0),#D43C33)
+}
+.allList>view:nth-child(2n+1){
+  background: linear-gradient(to left,rgba(145,244,218,0),#D43C33)
+}
+
+text {
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+
+image {
+  display: block;
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 60rpx;
+}

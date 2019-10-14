@@ -1,0 +1,8 @@
+<!--pages/songerList/songerList.wxml-->
+
+<view class="allList">
+  <view class="item" bindtap="goToList" data-id="{{item.id}}" wx:for="{{songerList}}" wx:key="{{index}}">
+    <image src="{{item.img1v1Url}}"></image>
+    <text></text> {{item.name}}
+  </view>
+</view>

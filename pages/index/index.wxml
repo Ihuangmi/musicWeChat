@@ -1,0 +1,30 @@
+<view class="recommend">推荐歌单</view>
+
+<view class="box">
+  <view bindtap="toDetail" wx:for="{{coverImgUrl}}" wx:key="{{index}}" data-id="{{index}}" data-img="{{item.picUrl}}" data-text="{{item.name}}" data-copywriter="{{item.copywriter}}">
+    <image src="{{item.picUrl}}" class="img"></image>
+    <!-- <view class="text">{{item.name}}</view> -->
+    <view class="text">{{arr[index]}}</view>
+  </view>
+</view>
+
+
+<view class="top">最新音乐</view>
+
+
+<view wx:for="{{ songList }}" wx:key="{{index}}" class="item" bindtap="toPlay" data-id="{{item.id}}" >
+  
+  <view class="left">
+    <view  data-id="{{ item.id }}" >{{ item.name}}</view>
+    <view class="info">
+      <view class="sq"> <image src="/resource/sq.png"></image></view>
+      <view class="songer">{{songer[index]}}</view>      
+    </view>
+   
+  </view>
+  
+  <view class="right">
+    <image src="/resource/playGray.png"></image>
+  </view>
+
+</view>

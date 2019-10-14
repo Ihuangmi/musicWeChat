@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/songerList/songerList",
+    "pages/songer/songer",
+    "pages/allList/allList",
+    "pages/listDetail/listDetail",
+    "pages/playSong/playSong",
+    "pages/songList/songList"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D43C33",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#D43C33",
+    "borderStyle": "white",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/allList/allList",
+        "text": "榜单"
+      },
+      {
+        "pagePath": "pages/songerList/songerList",
+        "text": "歌手"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

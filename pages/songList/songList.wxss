@@ -1,0 +1,72 @@
+/* pages/04/04.wxss */
+page{
+  background-color: #F8F8F8;
+}
+.nav {
+  width: 750rpx;
+  background-color: #7b5b59;
+  padding: 60rpx 20rpx 60rpx 30rpx;
+}
+
+.nav1 {
+  display: flex;
+}
+
+.img {
+  width: 256rpx;
+  height: 256rpx;
+}
+
+.text {
+  width: 416rpx;
+  height: 256rpx;
+  margin-left: 32rpx;
+  color: white;
+  padding-top: 1px;
+  font-size: 17px;
+}
+
+.tag {
+  width: 700rpx;
+  height: 214rpx;
+  padding-top: 20rpx;
+  margin: 0 30rpx;
+}
+.list{
+  background: #EEEFF0;
+  padding: 10rpx 20rpx;
+  font-size: 16px;
+}
+.song {
+  height: 110rpx;
+  color: #333;
+  font-size: 18px;
+  border: 1px solid #f6f6f6;
+  display: flex;
+}
+.num{
+  width: 80rpx;
+  height: 110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  color: #AAAAAA;
+}
+
+.singer{
+  color: #AAAAAA;
+  font-size: 14px;
+}
+.content{
+  width: 600rpx;
+}
+.icon{
+  width: 44rpx;
+  height: 110rpx;
+  text-align: center;
+  line-height: 110rpx;
+  color: #AAAAAA;
+}
+.icon2{
+  width: 44rpx;
+  height: 44rpx;
+}
